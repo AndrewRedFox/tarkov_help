@@ -9,11 +9,11 @@ class SelectTarkovHelp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.white12,
       appBar: AppBar(
         title: Text('TARKOV HELP'),
         centerTitle: true,
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.white12,
       ),
       body: Center(
         child:
@@ -33,29 +33,29 @@ class Buttons extends StatelessWidget {
         Column(
           children: [
             SizedBox(height: 30,),
-            SizedBox(height: 100, width: double.infinity, child:
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(primary: Colors.lightGreen, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0),),),
-              onPressed: (){
-                Navigator.push(context,  MaterialPageRoute(builder: (context) => Patrons()));
-              },
-              child: const Text('ПАТРОНЫ', style: TextStyle(
-                fontSize: 40,
-              ),),
-            ),
-              ),
-            SizedBox(height: 20,),
-            SizedBox(height: 100, width: double.infinity, child:
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(primary: Colors.lightGreen, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0),),),
-              onPressed: (){
-                Navigator.push(context,  MaterialPageRoute(builder: (context) => BodyArmor()));
-              },
-              child: const Text('БРОНЕЖИЛЕТЫ', style: TextStyle(
-                fontSize: 40,
-              ),),
-            ),
-            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                SizedBox(height: 100, /*width: double.infinity,*/ child:
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0),),),
+                  onPressed: (){
+                    Navigator.push(context,  MaterialPageRoute(builder: (context) => Patrons()));
+                  },
+                  child: Image.asset('assets/bullet.png'),
+
+                ),),
+                SizedBox(height: 100, /*width: double.infinity,*/ child:
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0),),),
+                  onPressed: (){
+                    Navigator.push(context,  MaterialPageRoute(builder: (context) => BodyArmor()));
+                  },
+                  child: Image.asset('assets/armor.png'),
+                ),
+                ),
+              ],
+            )
           ],
         )
     );

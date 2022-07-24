@@ -1,0 +1,143 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class FivePointFiftySixOnFortyFive extends StatelessWidget {
+  const FivePointFiftySixOnFortyFive({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('5.56x45'),
+        centerTitle: true,
+        backgroundColor: Colors.green,
+      ),
+      body: ListView(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              SizedBox(height: 150,),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  SizedBox(height: 20,),
+                  Text('НАЗВАНИЕ:', style: TextStyle(fontSize: 18),),
+                  SizedBox(height: 15,),
+                  Text('5.56x45мм SSA AP'),
+                  SizedBox(height: 15,),
+                  Text('5.56x45мм M995'),
+                  SizedBox(height: 15,),
+                  Text('5.56x45мм M855A1'),
+                  SizedBox(height: 15,),
+                  Text('5.56x45мм M856A1'),
+                  SizedBox(height: 15,),
+                  Text('5.56x45мм M855'),
+                  SizedBox(height: 15,),
+                  Text('5.56x45мм FMJ'),
+                  SizedBox(height: 15,),
+                  Text('5.56x45мм M856'),
+                  SizedBox(height: 15,),
+                  Text('5.56x45мм MK 318 Mod 0'),
+                  SizedBox(height: 15,),
+                  Text('5.56x45мм MK 255 Mod 0'),
+                  SizedBox(height: 15,),
+                  Text('5.56x45мм HP'),
+                  SizedBox(height: 15,),
+                  Text('5.56x45мм Warmageddon'),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: const [
+                  SizedBox(height: 20,),
+                  Text('УРОН:', style: TextStyle(fontSize: 18)),
+                  SizedBox(height: 15,),
+                  Text('38'),
+                  SizedBox(height: 15,),
+                  Text('42'),
+                  SizedBox(height: 15,),
+                  Text('49'),
+                  SizedBox(height: 15,),
+                  Text('54'),
+                  SizedBox(height: 15,),
+                  Text('53'),
+                  SizedBox(height: 15,),
+                  Text('54'),
+                  SizedBox(height: 15,),
+                  Text('59'),
+                  SizedBox(height: 15,),
+                  Text('69'),
+                  SizedBox(height: 15,),
+                  Text('63'),
+                  SizedBox(height: 15,),
+                  Text('79'),
+                  SizedBox(height: 15,),
+                  Text('88'),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: const [
+                  SizedBox(height: 20,),
+                  Text('ПО БРОНЕ:', style: TextStyle(fontSize: 18)),
+                  SizedBox(height: 15,),
+                  Text('64'),
+                  SizedBox(height: 15,),
+                  Text('58'),
+                  SizedBox(height: 15,),
+                  Text('52'),
+                  SizedBox(height: 15,),
+                  Text('52'),
+                  SizedBox(height: 15,),
+                  Text('37'),
+                  SizedBox(height: 15,),
+                  Text('33'),
+                  SizedBox(height: 15,),
+                  Text('34'),
+                  SizedBox(height: 15,),
+                  Text('35'),
+                  SizedBox(height: 15,),
+                  Text('32'),
+                  SizedBox(height: 15,),
+                  Text('22'),
+                  SizedBox(height: 15,),
+                  Text('11'),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: const [
+                  SizedBox(height: 20,),
+                  Text('КЛАСС:', style: TextStyle(fontSize: 18)),
+                  SizedBox(height: 15,),
+                  Text('5 и 70% 6'),
+                  SizedBox(height: 15,),
+                  Text('5 и 30% 6'),
+                  SizedBox(height: 15,),
+                  Text('4 и 40% 5'),
+                  SizedBox(height: 15,),
+                  Text('3 и 70% 4'),
+                  SizedBox(height: 15,),
+                  Text('2 и 80% 3'),
+                  SizedBox(height: 15,),
+                  Text('2 и 30% 3'),
+                  SizedBox(height: 15,),
+                  Text('2 и 30% 3'),
+                  SizedBox(height: 15,),
+                  Text('2'),
+                  SizedBox(height: 15,),
+                  Text('1 и 80% 2'),
+                  SizedBox(height: 15,),
+                  Text('0 и 80% 1'),
+                  SizedBox(height: 15,),
+                  Text('0 и 30% 1'),
+                ],
+              )
+            ],
+          )
+        ],
+      ),
+    );
+  }
+}
